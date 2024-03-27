@@ -33,21 +33,29 @@
     </header>
 
     <main class="contenedor">
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
+        <h3 class="centrar-texto">Contacto</h3>
 
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+        <div class="contacto-bg"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
             </div>
 
-            <div class="sobre-nosotros__texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique, mi non mollis egestas, nisl neque mollis sapien, sed ornare velit mi pulvinar diam. Cras non sem non turpis vestibulum laoreet. Pellentesque vitae scelerisque dolor, non fermentum dui. Duis at pharetra dolor, a convallis orci. Vivamus quis gravida tellus.</p>
-
-                <p>In mauris velit, luctus id lorem vel, dictum imperdiet nisi. Praesent non justo diam. Sed lacinia facilisis velit blandit sodales. Vivamus tempor dolor non nisl semper semper. Vestibulum tempus blandit fermentum. Proin a massa vitae augue porta ullamcorper pharetra in augue.</p>
-
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu Email" id="email">
             </div>
 
-        </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
 
     </main>
 
